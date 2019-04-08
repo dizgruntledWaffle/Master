@@ -1,0 +1,111 @@
+
+
+
+  main {
+    flex: 1 0 auto;
+  }
+
+body {
+    background-color: #4527a0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+ul {
+     color: #4527a0;
+}
+
+.speech-bubble {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right:auto;
+    height:160px;
+	width:40%;
+	background:#c5cae9;
+    border-radius: .4em;
+    position: relative;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-right-color: #c5cae9;
+	border-left: 0;
+	margin-top: -20px;
+	margin-left: -20px;
+}
+
+.greeting {
+background-color: #c5cae9;
+height:50px;
+width: 300px;
+position: relative;
+margin-top: 300px;
+padding-top: 50px;
+margin-left: 10%;
+margin-right: auto;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 35px;
+color: #4527a0;
+text-align: center;
+}
+
+#cover { 
+    width: 200px;
+    height: 205px;
+    border-radius: 60%;
+    rotate: 90deg;
+    object-fit: cover; 
+    margin-top: -700%;
+    margin-left: 0%;
+}
+
+.page-footer {
+
+    background-color: #c5cae9;
+    height: 100px;
+}
+
+.nav li a{
+    color:#4527a0 !important;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-google {
+      background: #DB4437;
+      color: white;
+  }
+
