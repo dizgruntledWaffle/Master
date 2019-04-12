@@ -304,11 +304,11 @@ main {
 }
 
 #connectImg {
-  height: 550px;
-  width:750px;
-  margin-left:26%;
+  height: auto;
+  width:auto;
+  margin-left:30%;
   position: absolute;
-  margin-top:5.7%
+  margin-top:2%;
   
  
 }
