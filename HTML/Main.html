@@ -45,7 +45,7 @@
                 <ul class="sections">
                 <li type="text"><a href="#missionTitle" class="about">Mission</a></li>
                 <li type="text"><a href="#servicesDiv" class="services">Services</a></li>
-                <li type="text"><a href="#footerr" class="contact">Contact</a></li>
+                <li type="text"><a href="#contactTitle" class="contact">Contact</a></li>
                 </ul>
           </div> 
         
@@ -63,7 +63,7 @@
           
             
           
-      
+         
 
         
 <!--About/Mission-->
@@ -71,6 +71,7 @@
 <div class="indigo lighten-4" id="missionDiv" >
   <div class="row"></div>
   <h3 class="indigo lighten-4" id="missionTitle">Mission</h3>
+  <hr id="decor" class="style-seven">
   <p class="indigo lighten-4" id="missionContent">There’s a predisposition within me to solve problems bigger than myself. Computer Science is only one among many fields of study that can leave one aimlessly staring at their screen with an ear facing their shoulder. This is when gypsyCoder comes to your aid by establishing and/or building your personal brand, brick and mortar business, or online business via software technological advancements.</p>
 </div>
 
@@ -79,6 +80,7 @@
 <div class ="indigo lighten-4" id="servicesDiv" >
   <div class="row"></div>
   <h3 class="indigo lighten-4" id="servicesTitle">Services</h3>
+  <hr id="decor"class="style-seven">
   <ul id="servicesContent">
       <li>Website Development</li>
       <li>Mobile Development</li>
@@ -87,50 +89,51 @@
   </ul>  
 </div>
 
-<!--Contact Information and Social Media-->
-        
+<!--Contact-->
+   
 <div class="indigo lighten-4"id="contactDiv">
-  <h3 class="indigo lighten-4"id="contactTitle">Connect</h3>
-  <form id="contactContent"class="col s12">
+    <div class ="row">
+        <h3 class="indigo lighten-4"id="contactTitle">Connect</h3>
+        <hr id="decor" class="style-seven">
+        <div class="row"><img class="col 5 offset-5" id="connectImg" src="../Assets/connect.jpg"></div>        
+    </div>
+  
+  <form id="contactContent"class="col s5">
+      
     <div class="row">
       <div class="input-field col s6">
-        <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-        <label for="first_name">First Name</label>
-      </div>
+        <input id="firstName" type="text" class="validate">
+        <label id="firstNameLbl"for="firstName">First Name</label>
+    </div>
+    
+    <div class="row"></div>
       <div class="input-field col s6">
-        <input id="last_name" type="text" class="validate">
-        <label for="last_name">Last Name</label>
+        <input id="lastName" type="text" class="validate">
+        <label id="lastNameLbl"for="lastName">Last Name</label>
       </div>
-    </div>
-    <div class="row">
-      <div class="input-field col s12">
-        <input disabled value="I am not editable" id="disabled" type="text" class="validate">
-        <label for="disabled">Disabled</label>
       </div>
-    </div>
-    <div class="row">
-      <div class="input-field col s12">
-        <input id="password" type="password" class="validate">
-        <label for="password">Password</label>
-      </div>
-    </div>
-    <div class="row">
-      <div class="input-field col s12">
-        <input id="email" type="email" class="validate">
-        <label for="email">Email</label>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col s12">
-        This is an inline input field:
-        <div class="input-field inline">
-          <input id="email_inline" type="email" class="validate">
-          <label for="email_inline">Email</label>
-          <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+    
+    <div class="row"></div>
+        <div class="col s6">      
+          <div class="input-field col s6">
+            <input id="email" type="email" class="validate">
+            <label id="emailLbl"for="email">Email</label>
+          </div>
         </div>
+      
+        <div class="row"></div>
+        <div class="row"></div>
+      <div class="input-field col s12">
+        <textarea id="message" type="text"></textarea>  
+        <label id="messageLbl" for="message">Enter text here</label>      
       </div>
-    </div>
+      
+      <button class="deep-purple darken-3" id="submitBtn"class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+    <div class="row">
+      </div>       
   </form>
+  
+  
 </div>
       
           

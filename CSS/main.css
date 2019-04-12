@@ -234,6 +234,8 @@ main {
   text-align: center;
   padding-top: 40px;
   padding-left: 40px;
+  margin-top:10%;
+ 
   
   
 }
@@ -245,11 +247,70 @@ main {
   font-size: 20px;
   text-align: left;
   padding: 25px 40px 40px 40px;
+  
 
 }
 
-label {
+#firstNameLbl {
+
   color: #4527a0;
+}
+
+#firstName {
+
+  width: 400px;
+}
+
+#lastNameLbl {
+
+  color: #4527a0;
+}
+
+#lastName {
+
+  width: 400px;
+}
+
+#emailLbl {
+
+  color: #4527a0;
+  
+}
+
+#email {
+
+  width: 400px;
+}
+
+#messageLbl {
+  color: #4527a0;
+  margin-left: 1%;
+}
+
+#message {
+  color: #4527a0;
+  height: 200px;
+  width: 400px;
+  border-color: #4527a0;
+  box-shadow: 0 0 5px rgba(0,0,0,.05), 2px 2px 5px rgba(0,0,0,.1);
+  
+}
+
+#submitBtn {
+  color: #c5cae9;
+  margin-left: 12.5%;
+  height: 50px;
+  width: 100px;
+}
+
+#connectImg {
+  height: 550px;
+  width:750px;
+  margin-left:26%;
+  position: absolute;
+  margin-top:5.7%
+  
+ 
 }
 
 
@@ -259,5 +320,10 @@ label {
     background-color: #4527a0;
     color: #c5cae9;
   
+  }
+
+  #decor {
+
+    width: 28%;
   }
   
