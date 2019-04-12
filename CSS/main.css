@@ -52,7 +52,7 @@ hr.style-seven:before { /* Not really supposed to work, but does */
     border-radius: 20px;
 }
 
-#cover:hover { 
+#cover { 
   margin-top: 10%;
   margin-left: 10%;
   width: 200px;
@@ -62,69 +62,6 @@ hr.style-seven:before { /* Not really supposed to work, but does */
   object-fit: cover; 
 
 }
-
-
-#speechBubble  {
-    margin-top: 15%;
-    position: absolute;
-    transform-origin: 0% 100%;
-    text-align: center;
-    background-color:#c5cae9;
-    color: #4527a0;
-    border-radius: 10px;
-    border-color: #4527a0;
-    border-width: 3px;
-    width: 120px;
-    padding: 10px;
-    left: 110px;
-    top: -75px;
-    transform: scale(0);
-    animation-fill-mode: forwards;
-  }
-  /* We need to add a tail to the speech bubble. This is done using
-  the ::before pseudo-element. The tail's size is controlled by 
-  its borders. The right and bottom borders are given a transparent
-  color so that the tail still retains its shape while giving the
-  desired look */
-  #speechBubble::before {
-    content: "";
-    display: block;
-    width: 0;
-    position: absolute;
-    bottom: -25px;
-    left: 5px;
-    border-style: solid;
-    border-width: 15px;
-    border-color:#4527a0;
-    transform: rotate(10deg);
-  }
-  
-  /* Here the scale changes from 0 to 1. To add the bounciness 
-  effect, the scale is set to 1.25 midway through the animation
-  to give the animation a nicer effect. */
-
-  @keyframes expand-bounce {
-    0% {
-      transform: scale(0);
-    }
-    50% {
-      transform: scale(1.25);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  
-  /* Here the scale simply goes from 1 back to 0 */
-  @keyframes shrink {
-    0% {
-      transform: scale(1);
-    }
-    100% {
-      transform: scale(0);
-    }
-  }
-
 
 #coverDiv{
     margin-top: 10%;
@@ -136,8 +73,9 @@ hr.style-seven:before { /* Not really supposed to work, but does */
 
 
 #cover { 
-    margin-top: -10%;
-    margin-left: 10%;    
+    margin-top: 5%;
+    margin-left: -25%; 
+    margin-bottom: 10%;   
     width: 200px;
     height: 205px;
     border-radius: 60%;
@@ -209,6 +147,8 @@ nav {
   color: #4527a0;
   font-family: 'M PLUS 1p', sans-serif;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 40px;
   padding-left: 40px;
   
@@ -220,7 +160,7 @@ nav {
   color: #4527a0;
   font-family: 'Maven Pro', sans-serif;
   font-size: 20px;
-  text-align: left;
+  text-align: center;
   padding: 25px 40px 40px 40px;
 
 }
@@ -235,18 +175,83 @@ main {
   flex: 1 0 auto;
 }
 
+.typewriter{
 
+  display: inline-block;
+  margin-top: 10%;
+}
 
-#greeting {
-  
-  
+.typewriter-text {
+  display: inline-block;
   font-family: 'Press Start 2P', cursive;
   color: #4527a0;
-  font-size: 44px;
+  font-size: 36px;
+  font-weight:;
   margin-top: 10%;
-  margin-left: 20%;
+  margin-left: 30%;
   text-align: center;
+
+  overflow: hidden;
+  animation: typing 5s steps(30, end), blink .75s step-end infinite;
+  white-space: nowrap;
+  border-right: 4px solid #4527a0;
+  box-sizing: border-box;
 }
+
+@keyframes typing {
+  from { 
+      width: 0% 
+  }
+  to { 
+      width: 100% 
+  }
+}
+
+@keyframes blink {
+  from, to { 
+      border-color: transparent 
+  }
+  50% { 
+      border-color: #4527a0; 
+  }
+}
+
+#contactDiv {
+  height: auto;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  box-shadow: 0 0 5px rgba(0,0,0,.05), 2px 2px 5px rgba(0,0,0,.1);
+  border-radius: 4px;
+  
+}
+
+#contactTitle {
+
+  color: #4527a0;
+  font-family: 'M PLUS 1p', sans-serif;
+  text-align: center;
+  padding-top: 40px;
+  padding-left: 40px;
+  
+  
+}
+
+#contactContent {
+
+  color: #4527a0;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 20px;
+  text-align: left;
+  padding: 25px 40px 40px 40px;
+
+}
+
+label {
+  color: #4527a0;
+}
+
 
 .page-footer {
   margin-top: 10%;

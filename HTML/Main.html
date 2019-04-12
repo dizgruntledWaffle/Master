@@ -51,10 +51,10 @@
         
         </nav> 
          
-          <h2  id="greeting">
-          <br>Hey, I'm Amber.
-          <br>
-          <br>Welcome!</h2>
+        
+          <div class="typewriter">
+            <div class="typewriter-text">Hey, I'm Amber. Welcome!</div>
+          </div>
           <img  id="cover" src="../Assets/IMG_0052.jpg" alt="" class="circle responsive-img">
           
           
@@ -71,7 +71,7 @@
 <div class="indigo lighten-4" id="missionDiv" >
   <div class="row"></div>
   <h3 class="indigo lighten-4" id="missionTitle">Mission</h3>
-  <p class="indigo lighten-4" id="missionContent">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis.</p>
+  <p class="indigo lighten-4" id="missionContent">There’s a predisposition within me to solve problems bigger than myself. Computer Science is only one among many fields of study that can leave one aimlessly staring at their screen with an ear facing their shoulder. This is when gypsyCoder comes to your aid by establishing and/or building your personal brand, brick and mortar business, or online business via software technological advancements.</p>
 </div>
 
 <!--Services-->
@@ -80,24 +80,58 @@
   <div class="row"></div>
   <h3 class="indigo lighten-4" id="servicesTitle">Services</h3>
   <ul id="servicesContent">
-      <li>Lorem ipsum dolor sit amet, consectetuer adipiscing 
-      elit. Aenean commodo ligula eget dolor. Aenean 
-      massa.</li>
-      <li>Cum sociis natoque penatibus et magnis dis 
-      parturient montes, nascetur ridiculus mus. Donec quam 
-      felis, ultricies nec, pellentesque eu, pretium quis, 
-      sem.</li>
-      <li>Nulla consequat massa quis enim. Donec pede justo, 
-      fringilla vel, aliquet nec, vulputate eget, arcu.</li>
-      <li>In enim justo, rhoncus ut, imperdiet a, venenatis 
-      vitae, justo. Nullam dictum felis eu pede mollis 
-      pretium. Integer tincidunt.</li>
-    </ul>  
+      <li>Website Development</li>
+      <li>Mobile Development</li>
+      <li>Rebranding Assistance</li>
+      <li>Social Media Managemnet</li>
+  </ul>  
 </div>
 
 <!--Contact Information and Social Media-->
         
-    
+<div class="indigo lighten-4"id="contactDiv">
+  <h3 class="indigo lighten-4"id="contactTitle">Connect</h3>
+  <form id="contactContent"class="col s12">
+    <div class="row">
+      <div class="input-field col s6">
+        <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+        <label for="first_name">First Name</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="last_name" type="text" class="validate">
+        <label for="last_name">Last Name</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+        <label for="disabled">Disabled</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="password" type="password" class="validate">
+        <label for="password">Password</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="email" type="email" class="validate">
+        <label for="email">Email</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        This is an inline input field:
+        <div class="input-field inline">
+          <input id="email_inline" type="email" class="validate">
+          <label for="email_inline">Email</label>
+          <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
       
           
   
